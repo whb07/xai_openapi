@@ -200,27 +200,6 @@ fn get_excluded_schemas() -> HashSet<&'static str> {
     set
 }
 
-/// Mapping of OpenAPI field names to Rust field names (for serde renames)
-fn get_field_name_mapping() -> HashMap<&'static str, &'static str> {
-    let mut map = HashMap::new();
-
-    // Common renames
-    map.insert("type", "content_type"); // ContentPart
-    map.insert("type", "response_type"); // Various response types
-    map.insert("type", "annotation_type"); // Annotation
-    map.insert("type", "call_type"); // Tool calls
-    map.insert("type", "output_type"); // Output types
-    map.insert("type", "message_type"); // Message types
-    map.insert("type", "part_type"); // Part types
-    map.insert("type", "text_type"); // Text types
-    map.insert("type", "reasoning_type"); // Reasoning
-    map.insert("type", "schema_type"); // Schema types
-    map.insert("type", "source_type"); // Source types
-    map.insert("type", "tool_type"); // Tool types
-
-    map
-}
-
 #[test]
 fn test_openapi_spec_is_valid() {
     let spec = common::load_openapi_spec();

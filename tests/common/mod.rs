@@ -1,5 +1,7 @@
 //! Shared test utilities for xai-openapi tests.
 
+#![allow(dead_code)]
+
 use serde::{de::DeserializeOwned, Serialize};
 use serde_json::Value;
 use std::fs;
