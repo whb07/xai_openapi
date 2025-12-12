@@ -2,7 +2,7 @@
 name = "xai-openapi"
 version = "0.1.0"
 edition = "2021"
-license = "Apache-2.0"
+license = "MIT OR Apache-2.0"
 description = "Rust types for the xAI API (Grok models)"
 keywords = ["xai", "grok", "api", "openapi"]
 categories = ["api-bindings", "web-programming", "no-std"]
