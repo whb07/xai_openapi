@@ -1,4 +1,4 @@
-//! Internal prelude for std/no_std compatibility.
+//! Internal prelude for `std`/`no_std` compatibility.
 
 #[cfg(feature = "std")]
 pub use std::string::{String, ToString};

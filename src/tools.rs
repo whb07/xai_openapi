@@ -178,7 +178,7 @@ pub enum WebSearchAction {
         #[serde(skip_serializing_if = "Option::is_none")]
         sources: Option<Vec<WebSearchSource>>,
     },
-    /// Action type "open_page" - Opens a specific URL from search results.
+    /// Action type `open_page` - Opens a specific URL from search results.
     OpenPage {
         /// The URL of the page to open.
         url: String,
@@ -216,7 +216,7 @@ pub struct WebSearchSource {
 /// Web search options.
 #[derive(Clone, Debug, Default, PartialEq, Serialize, Deserialize)]
 pub struct WebSearchOptions {
-    /// This field included for compatibility reason with OpenAI's API.
+    /// This field included for compatibility reason with `OpenAI`'s API.
     #[serde(skip_serializing_if = "Option::is_none")]
     pub search_context_size: Option<String>,
 

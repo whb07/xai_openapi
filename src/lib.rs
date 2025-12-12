@@ -20,7 +20,7 @@
 //! # Features
 //!
 //! - `std` (default) - Enable std library support. Uses `std::collections::HashMap`.
-//! - When `std` is disabled (no_std), uses `hashbrown::HashMap` and requires `alloc`.
+//! - When `std` is disabled (`no_std`), uses `hashbrown::HashMap` and requires `alloc`.
 //!
 //! # Example
 //!

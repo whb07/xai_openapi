@@ -4,7 +4,7 @@ use serde::{Deserialize, Serialize};
 
 use crate::prelude::*;
 
-/// SearchRequest defines the request to search for documents.
+/// `SearchRequest` defines the request to search for documents.
 #[derive(Clone, Debug, Default, PartialEq, Serialize, Deserialize)]
 pub struct SearchRequest {
     /// The query to search for which will be embedded using the
@@ -31,14 +31,14 @@ pub struct SearchRequest {
     pub retrieval_mode: Option<RetrievalMode>,
 }
 
-/// SearchResponse defines the response to a search request.
+/// `SearchResponse` defines the response to a search request.
 #[derive(Clone, Debug, Default, PartialEq, Serialize, Deserialize)]
 pub struct SearchResponse {
     /// The search matches.
     pub matches: Vec<SearchMatch>,
 }
 
-/// SearchMatch defines a single match from a search request.
+/// `SearchMatch` defines a single match from a search request.
 #[derive(Clone, Debug, Default, PartialEq, Serialize, Deserialize)]
 pub struct SearchMatch {
     /// The document ID.
@@ -61,7 +61,7 @@ pub struct SearchMatch {
     pub fields: HashMap<String, String>,
 }
 
-/// DocumentsSource defines the source of documents to search over.
+/// `DocumentsSource` defines the source of documents to search over.
 #[derive(Clone, Debug, Default, PartialEq, Serialize, Deserialize)]
 pub struct DocumentsSource {
     /// The collection IDs to search in.
