@@ -1,0 +1,22 @@
+[package]
+name = "xai-openapi"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "Rust types for the xAI API (Grok models)"
+keywords = ["xai", "grok", "api", "openapi"]
+categories = ["api-bindings", "web-programming", "no-std"]
+
+[lib]
+name = "xai_openapi"
+path = "src/lib.rs"
+doctest = false
+
+[features]
+default = ["std"]
+std = ["serde/std", "serde_json/std"]
+
+[dependencies]
+serde = { version = "1", default-features = false, features = ["derive", "alloc"] }
+serde_json = { version = "1", default-features = false, features = ["alloc"] }
+hashbrown = { version = "0.16.1", features = ["serde"] }
