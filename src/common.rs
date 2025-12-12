@@ -93,10 +93,10 @@ pub enum ResponseFormat {
     /// Specify text response format, always `"text"`.
     #[default]
     Text,
-    /// Specify json_object response format, always `json_object`.
+    /// Specify `json_object` response format, always `json_object`.
     /// Used for backward compatibility. Prefer to use `"json_schema"` instead.
     JsonObject,
-    /// Specify json_schema response format with a given schema.
+    /// Specify `json_schema` response format with a given schema.
     JsonSchema {
         /// A json schema representing the desired response schema.
         json_schema: serde_json::Value,
@@ -381,7 +381,7 @@ pub struct StartDeferredChatResponse {
     pub request_id: String,
 }
 
-/// DocumentsSource defines the source of documents to search over.
+/// `DocumentsSource` defines the source of documents to search over.
 #[derive(Clone, Debug, Default, PartialEq, Serialize, Deserialize)]
 pub struct DocumentsSource {
     /// The collection IDs to search in.

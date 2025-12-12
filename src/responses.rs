@@ -405,9 +405,9 @@ pub enum ModelResponseFormat {
     /// Specify text response format, always `"text"`.
     #[default]
     Text,
-    /// Specify json_object response format.
+    /// Specify `json_object` response format.
     JsonObject,
-    /// Specify json_schema response format with a given schema.
+    /// Specify `json_schema` response format with a given schema.
     JsonSchema {
         /// A json schema representing the desired response schema.
         schema: serde_json::Value,
@@ -426,7 +426,7 @@ pub enum ModelResponseFormat {
 /// Response to delete a stored completion.
 #[derive(Clone, Debug, Default, PartialEq, Serialize, Deserialize)]
 pub struct DeleteStoredCompletionResponse {
-    /// The response_id to be deleted.
+    /// The `response_id` to be deleted.
     pub id: String,
 
     /// The deleted object type, which is always `response`.
