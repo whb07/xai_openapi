@@ -3,7 +3,7 @@
 [![Crates.io](https://img.shields.io/crates/v/xai-openapi.svg)](https://crates.io/crates/xai-openapi)
 [![Documentation](https://docs.rs/xai-openapi/badge.svg)](https://docs.rs/xai-openapi)
 [![CI](https://github.com/whb07/xai_openapi/actions/workflows/ci.yml/badge.svg)](https://github.com/whb07/xai_openapi/actions/workflows/ci.yml)
-[![License](https://img.shields.io/crates/l/xai-openapi.svg)](https://github.com/whb07/xai_openapi#license)
+[![License](https://img.shields.io/github/license/whb07/xai_openapi)](LICENSE-APACHE)
 
 Rust types for the [xAI API](https://docs.x.ai/api), including support for Grok models.
 
