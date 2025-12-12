@@ -1,3 +1,4 @@
+#![deny(dead_code)]
 //! Rust types for the xAI API.
 //!
 //! This crate provides type definitions for interacting with the xAI API,
