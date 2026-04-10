@@ -21,7 +21,7 @@ std = ["serde/std", "serde_json/std"]
 [dependencies]
 serde = { version = "1", default-features = false, features = ["derive", "alloc"] }
 serde_json = { version = "1", default-features = false, features = ["alloc"] }
-hashbrown = { version = "0.16.1", features = ["serde"] }
+hashbrown = { version = "0.17.0", features = ["serde"] }
 
 [dev-dependencies]
 pretty_assertions = "1"
